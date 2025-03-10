@@ -61,7 +61,7 @@ This script will:
 
 You can purchase VPN / Proxy setup guides and more:
 
--   [Method 1: Boosty (International and Russian cards)](https://boosty.to/anten-ka)
+-   [Method 1: Boosty (International and Russian cards)](https://boosty.to/gofreenet)
 -   [Method 2: Tribute (International and Russian cards)](https://web.tribute.tg/p/cJu)
 -   [Method 3: Donate via Tips (International and Russian cards)](https://boosty.to/gofreenet/donate)
 -   [Method 4: Taplink (Russian cards, SBP)](https://antenka.taplink.ws/)
