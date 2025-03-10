@@ -1,7 +1,7 @@
-﻿# SOCKS5 Proxy Installer (Dante) - English Version
+﻿# SOCKS5 Proxy Installer (Dante) - English Version for Ubuntu 
 
 This script automatically installs and configures a **SOCKS5 proxy** with authentication using **Dante**.
-
+Tested on Ubuntu 24.04 & 22.04
 ## 📌 Features:
 
 -   Automatically detects the network interface
