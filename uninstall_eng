@@ -1,0 +1,32 @@
+#!/bin/bash
+
+echo "Stopping danted service..."
+systemctl stop danted
+systemctl disable danted
+
+echo "Removing dante-server package..."
+apt remove --purge -y dante-server
+apt autoremove -y
+
+echo "Deleting configuration files..."
+rm -f /etc/danted.conf
+rm -f /etc/pam.d/sockd
+rm -rf /var/run/danted.pid
+
+echo "Removing proxy users..."
+getent passwd | grep -E 'proxyuser|danted' | cut -d: -f1 | xargs -r userdel -r
+
+echo "Clearing firewall rules (if UFW was used)..."
+PORT=$(grep "internal: 0.0.0.0 port" /etc/danted.conf | awk '{print $4}')
+if [ -n "$PORT" ]; then
+    ufw delete allow $PORT/tcp
+fi
+
+echo "All components have been removed!"
+read -p "Do you want to reboot the server? (y/n): " reboot_choice
+if [[ "$reboot_choice" == "y" || "$reboot_choice" == "Y" ]]; then
+    echo "Rebooting the server..."
+    reboot
+else
+    echo "Reboot canceled. The server is running without a proxy."
+fi
