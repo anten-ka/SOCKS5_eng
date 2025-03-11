@@ -4,7 +4,7 @@ This script automatically installs and configures a **SOCKS5 proxy** with authen
 
 ## 🌍 Available Languages
 
--   🇺🇸 [English](https://github.com/anten-ka/SOCKS5_eng/blob/main/readme.md)
+-   🇺🇸 [English](https://github.com/anten-ka/SOCKS5_eng/blob/main/README.md)
 -   🇷🇺 [Русский](https://github.com/anten-ka/SOCKS5)
 -   🇨🇳 [中文](https://github.com/anten-ka/SOCKS5_eng/blob/main/README_zh.md)
 -   🇦🇪 [العربية](https://github.com/anten-ka/SOCKS5_eng/blob/main/README_ar.md)
